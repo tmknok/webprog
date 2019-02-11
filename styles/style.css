@@ -1,8 +1,50 @@
+html {
+    font-family: Verdana;
+    background-color: #c2e8e3;
+    text-align: center;
+}
+body {
+    width: 850px;
+    margin: 30px auto;
+    background-color: beige;
+    padding: 0px 20px 20px 20px;
+    border: 3px dotted palevioletred;
+}
 h1 {
+    margin: 5;
+    padding: 20px 0;
     color: palevioletred;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 3px 3px 1px black;
 }
 h2 {
-    color: cornflowerblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    color: #e63964;
+}
+li {
+    font-size: 30px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+img {
+    display: block;
+    margin: 0 auto 20px;
+    border: 4px dotted #00bd7e;
+}
+table {
+    border: 3px solid #4526cf;
+    background-color: #c2e8e3;
+    padding: 10px;
+    margin: 0 auto;
+   
+}
+td {
+    padding: 10px;
+    margin: 2px;
+    border: 2px solid #7a9793;
+    background-color: rgb(255, 243, 138);
+}
+thead {
+    color: #ff02ab;
+    border-collapse: separate;
 }
