@@ -21,11 +21,7 @@ h1 {
 h2 {
     color: #e63964;
 }
-li {
-    font-size: 30px;
-    line-height: 2;
-    letter-spacing: 1px;
-}
+
 img {
     display: block;
     margin: 0 auto 20px;
@@ -47,4 +43,23 @@ td {
 thead {
     color: #ff02ab;
     border-collapse: separate;
+}
+a:hover {
+    background-color: #00ff88;
+}
+a:link, a:visited {
+    color: #ff00aa;
+}
+a.endlink {
+    color: black;
+}
+.form1 {
+    margin: 1em;
+}
+#special {
+    background-color: #e63964;
+}
+p {
+    font-size: 30px;
+    letter-spacing: 1px;
 }
