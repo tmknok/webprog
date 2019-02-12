@@ -1,5 +1,5 @@
 html {
-    font-family: Verdana;
+    font-family: 'Comic Sans MS';
     background-color: #c2e8e3;
     text-align: center;
 }
@@ -8,7 +8,7 @@ body {
     margin: 30px auto;
     background-color: beige;
     padding: 0px 20px 20px 20px;
-    border: 3px dotted palevioletred;
+    border: 9px dotted palevioletred;
 }
 h1 {
     margin: 5;
@@ -25,11 +25,11 @@ h2 {
 img {
     display: block;
     margin: 0 auto 20px;
-    border: 4px dotted #00bd7e;
+    border: 6px dotted #00bd7e;
 }
 table {
-    border: 3px solid #4526cf;
-    background-color: #c2e8e3;
+    border: 3px dotted #445bdf;
+    background-color: #bfd9ff;
     padding: 10px;
     margin: 0 auto;
    
@@ -73,7 +73,7 @@ a.endlink:hover {
     background-color: #e63964;
 }
 #endlinks {
-    border: 3px dotted #a77ed6;
+    border: 4px dotted #a77ed6;
     text-align: left;
     background-color: #ead7ff;
 }
