@@ -54,6 +54,9 @@ ol {
     margin-left: 40%;
     color:#692cad;
 }
+a {
+	text-decoration: none
+}
 a:hover {
     background-color: #c64dff8c;
 }
