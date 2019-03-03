@@ -55,7 +55,7 @@ const App = () => {
     }
 
     return (
-        <div>
+        <div className='konsta'>
             <Header course={course} />
             <Contents parts={course.parts} />
             <Total parts={course.parts} />
