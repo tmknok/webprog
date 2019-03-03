@@ -43,7 +43,7 @@ class App extends React.Component {
     render() {
         const { good, neutral, bad } = this.state
         const avg = ((good - bad) / (good + neutral + bad) || 0).toFixed(2)
-        const per = ((good / (good + neutral + bad)) * 100 || 0).toFixed(2)
+        const per = ((good / (good + neutral + bad)) * 100 || 0).toFixed(2) + ' %'
         return (
 
             < div className='konsta'>
