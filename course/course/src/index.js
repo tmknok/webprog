@@ -7,7 +7,7 @@ import './index.css'
 const Part = (props) => {
     return (
         <p>
-            {props.part.name}, {props.part.exercises}
+            {props.part.name} {props.part.exercises}
         </p>
     )
 }
