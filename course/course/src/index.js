@@ -21,17 +21,19 @@ const Header = (props) => {
 const Contents = (props) => {
     return (
         <div>
-            <Part part={props.parts[0]} />
-            <Part part={props.parts[1]} />
-            <Part part={props.parts[2]} />
+            {props.parts.map(part => <Part key={part.id} part={part} />)}
         </div>
     )
 }
 
 const Total = (props) => {
+
     return (
         <div>
-            <p>Total of {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises} exercixes</p>
+            <p>Total of {""}
+                {props.parts.reduce((sum, i) => (
+                    sum += i.exercises
+                ), 0)} {""} exercises</p>
         </div>
     )
 }
