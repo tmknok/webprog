@@ -4,6 +4,13 @@ import axios from 'axios';
 
 import './App.css'
 
+const baseUrl = "https://tinttis-contacts.herokuapp.com/api/persons"
+
+const getALL = () => {
+  const request = axios.get(baseUrl)
+  return request.then(response => response.data)
+}
+
 class App extends React.Component {
   constructor(props) {
     super(props)
@@ -16,7 +23,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:3001/persons')
+      .get('https://tinttis-contacts.herokuapp.com/api/persons')
       .then(response => {
         this.setState({ persons: response.data })
       })
@@ -39,7 +46,7 @@ class App extends React.Component {
     }
 
     axios
-      .post('http://localhost:3001/persons', newPerson)
+      .post('https://tinttis-contacts.herokuapp.com/api/persons', newPerson)
       .then(response => {
         this.setState({
           persons: this.state.persons.concat(response.data),
@@ -52,7 +59,7 @@ class App extends React.Component {
 
   deleteName = (id) => {
     return () => {
-      const url = `http://localhost:3001/persons/${id}`
+      const url = `https://tinttis-contacts.herokuapp.com/api/persons/${id}`
       const person = this.state.persons.find(n => n.id === id)
 
 

@@ -4,7 +4,7 @@ import App from './App';
 import axios from 'axios'
 
 axios
-    .get('http://localhost:3001/persons')
+    .get('https://tinttis-contacts.herokuapp.com/api/persons')
     .then(response => {
         const persons = response.data
         ReactDOM.render(
