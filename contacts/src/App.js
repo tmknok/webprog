@@ -8,7 +8,7 @@ const baseUrl = "https://tinttis-contacts.herokuapp.com/api/persons"
 
 const getALL = () => {
   const request = axios.get(baseUrl)
-  return request.then(response => response.data)
+  return request.then(response => response)
 }
 
 class App extends React.Component {
@@ -23,7 +23,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get('https://tinttis-contacts.herokuapp.com/api/persons')
+      .get(`${baseUrl}`)
       .then(response => {
         this.setState({ persons: response.data })
       })
@@ -46,7 +46,7 @@ class App extends React.Component {
     }
 
     axios
-      .post('https://tinttis-contacts.herokuapp.com/api/persons', newPerson)
+      .post(`${baseUrl}`, newPerson)
       .then(response => {
         this.setState({
           persons: this.state.persons.concat(response.data),
@@ -59,7 +59,7 @@ class App extends React.Component {
 
   deleteName = (id) => {
     return () => {
-      const url = `https://tinttis-contacts.herokuapp.com/api/persons/${id}`
+      const url = `${baseUrl}/${id}`
       const person = this.state.persons.find(n => n.id === id)
 
 
